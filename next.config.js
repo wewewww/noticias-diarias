@@ -9,6 +9,10 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   }
+  experimental: {
+  tracing: false,
+}
+
 };
 
 module.exports = nextConfig;
