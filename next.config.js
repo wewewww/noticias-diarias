@@ -9,13 +9,8 @@ const nextConfig = {
   },
   typescript: {
     ignoreBuildErrors: true,
-  },
-  // Evita rastrear archivos (build tracing) que provocan loop
-  outputFileTracingExcludes: {
-    '*': [
-      '**/node_modules/**/micromatch/**',
-    ],
-  },
+  }
 };
 
 module.exports = nextConfig;
+
