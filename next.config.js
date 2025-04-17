@@ -1,3 +1,4 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -7,8 +8,13 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    ignoreBuildErrors: true
+    ignoreBuildErrors: true,
+  },
+  experimental: {
+    // 🔴 Evitamos que intente trazar rutas innecesarias
+    serverActions: false,
   }
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
+
