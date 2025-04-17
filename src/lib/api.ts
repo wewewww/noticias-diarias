@@ -43,7 +43,9 @@ export async function fetchNews(params: NewsApiParams): Promise<NewsResponse> {
     }
   });
 
-  const baseUrl = process.env.NEXT_PUBLIC_API_URL || 'https://api-noticias-ochre.vercel.app/api/news';
+  const baseUrl =
+    process.env.NEXT_PUBLIC_API_URL ||
+    'https://api-noticias-ochre.vercel.app/api/news';
   const url = `${baseUrl}?${queryParams.toString()}`;
 
   try {
