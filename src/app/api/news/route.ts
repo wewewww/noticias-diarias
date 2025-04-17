@@ -2,6 +2,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { NewsApiParams, NewsResponse } from '@/lib/api';
 
+export const dynamic = 'force-dynamic';
+
 // Función para obtener noticias de NewsData.io a través del servidor
 export async function GET(request: NextRequest) {
   try {
