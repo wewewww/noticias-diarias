@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -9,6 +8,10 @@ const nextConfig = {
   },
   typescript: {
     ignoreBuildErrors: true,
+  },
+  experimental: {
+    // 🔴 EVITA este bucle recursivo de micromatch
+    manuallyTraceFiles: [],
   }
 };
 
