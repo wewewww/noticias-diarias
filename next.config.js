@@ -7,10 +7,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    ignoreBuildErrors: true,
-  },
-  experimental: {
-  tracing: false,
+    ignoreBuildErrors: true
 }
 
 };
