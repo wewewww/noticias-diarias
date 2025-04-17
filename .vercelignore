@@ -1,6 +1,1 @@
-node_modules/
-.next/
-node_modules/micromatch/
-node_modules/.pnpm/micromatch*/**
-node_modules/**/micromatch*/**
-.next/
+**/node_modules/next/dist/compiled/micromatch/**
