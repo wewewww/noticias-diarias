@@ -1,0 +1,7 @@
+{
+  "build": {
+    "env": {
+      "DISABLE_COLLECT_TRACES": "1"
+    }
+  }
+}
