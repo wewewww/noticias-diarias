@@ -1,7 +1,3 @@
 {
-  "build": {
-    "env": {
-      "DISABLE_COLLECT_TRACES": "1"
-    }
-  }
+  "buildCommand": "NEXT_PRIVATE_TRACE_UPLOAD=0 npm run build"
 }
