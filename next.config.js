@@ -1,3 +1,6 @@
+const micromatch = require('micromatch');
+const path = require('path');
+
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -7,10 +10,19 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    ignoreBuildErrors: true
-}
-
+    ignoreBuildErrors: true,
+  },
+  experimental: {
+    manuallyTraceFiles: true,
+    traceIgnorePatterns: [
+      '**/*.log',
+      '**/*.tmp',
+      '**/node_modules/**',
+      '**/.next/**',
+      '**/dist/**',
+      '**/out/**'
+    ]
+  }
 };
 
 module.exports = nextConfig;
-
