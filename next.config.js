@@ -8,7 +8,7 @@ const nextConfig = {
   },
   typescript: {
     ignoreBuildErrors: true,
-  }
+  },
   experimental: {
   tracing: false,
 }
