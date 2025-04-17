@@ -9,12 +9,7 @@ const nextConfig = {
   },
   typescript: {
     ignoreBuildErrors: true,
-  },
-  experimental: {
-    // 🔴 Evitamos que intente trazar rutas innecesarias
-    serverActions: false,
   }
-}
+};
 
-module.exports = nextConfig
-
+module.exports = nextConfig;
